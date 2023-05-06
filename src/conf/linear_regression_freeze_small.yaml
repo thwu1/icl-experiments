@@ -1,0 +1,16 @@
+inherit: 
+    - base_small.yaml
+
+training:
+    task: linear_regression
+    curriculum:
+        points:
+            start: 5
+            end: 21
+            inc: 2
+            interval: 2000
+
+out_dir: ../models/linear_regression_freezepe_small
+
+wandb:
+    name: "linear_regression_freezepe_small"
